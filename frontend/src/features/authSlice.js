@@ -22,8 +22,8 @@ export const loginUser = createAsyncThunk(
       return rejectWithValue(error.message || 'Login failed');
     }
   }
-);
-
+  
+)
 // Register user
 export const registerUser = createAsyncThunk(
   'auth/registerUser',
@@ -33,6 +33,18 @@ export const registerUser = createAsyncThunk(
       return { token, user };
     } catch (error) {
       return rejectWithValue(error.message || 'Registration failed');
+    }
+  }
+);
+
+export const refreshToken = createAsyncThunk(
+  'auth/refreshToken',
+  async (_, { rejectWithValue }) => {
+    try {
+      const { token, user } = await authService.refreshToken(); // API returns token and user info
+      return { token, user };
+    } catch (error) {
+      return rejectWithValue(error.message || 'Token refresh failed');
     }
   }
 );

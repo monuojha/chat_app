@@ -16,11 +16,11 @@ const Login = () => {
     e.preventDefault();
     dispatch(loginUser(credentials));
   };
-  // useEffect(() => {
-  //   if (error) {
-  //     alert(error);
-  //   }
-  // })
+  useEffect(() => {
+    if (error) {
+      alert(error);
+    }
+  })
   return (
     <>
    <div>

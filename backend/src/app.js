@@ -76,12 +76,12 @@ app.use(passport.session()); // persistent login sessions
 app.use(morganMiddleware);
 
 //api routes 
-import userRoutes from "./routes/user.routes.js";
+import userRoutes from "./routes/user.route.js";
 import messageRoutes from "./routes/message.route.js";
-import chatRoutes from "./routes/chat.routes.js";
+import chatRoutes from "./routes/chat.route.js";
 import { getGeneratedCredentials, seedUsers } from "./seeds/user.seeds.js";
-import { seedChatApp } from "./seeds/chat-app-seeds.js";
-import { errorHandler } from "./middlewares/error.middlewares.js";
+import { seedChatApp } from "./seeds/chat-app.seeds.js";
+import { errorHandler } from "./middleware/error.middleware.js";
 
 initializeSocketIO(io);
 

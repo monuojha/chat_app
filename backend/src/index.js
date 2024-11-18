@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import { httpServer } from "./app.js";
-import connectDB from "./db/index.js";
+import connectDB from "./db/index,.js";
 import logger from "./logger/winston.logger.js";
 
 dotenv.config({

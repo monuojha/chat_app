@@ -4,8 +4,8 @@ import {
   getAllMessages,
   sendMessage,
 } from "../controllers/message.controller.js";
-import { verifyJWT } from "../middlewares/auth.middlewares.js";
-import { upload } from "../middlewares/multer.middleware.js";
+import { verifyJWT } from "../middleware/auth.middleware.js";
+import { upload } from "../middleware/multer.middleware.js";
 import { sendMessageValidator } from "../validators/message.validator.js";
 import { mongoIdPathVariableValidator } from "../validators/mongodb.validator.js";
 import { validate } from "../validators/validate.js";

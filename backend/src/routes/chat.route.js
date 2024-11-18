@@ -12,7 +12,7 @@ import {
   renameGroupChat,
   searchAvailableUsers,
 } from "../controllers/chat.controller.js";
-import { verifyJWT } from "../middlewares/auth.middlewares.js";
+import { verifyJWT } from "../middleware/auth.middleware.js";
 import {
   createAGroupChatValidator,
   updateGroupChatNameValidator,

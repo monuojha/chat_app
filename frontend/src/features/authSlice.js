@@ -7,7 +7,7 @@ const initialState = {
   user: null, // Basic user info
   token: null, // Token used for API authentication
   isAuthenticated: false,
-//   isLoading: false,
+  isLoading: false,
   error: null,
 };
 

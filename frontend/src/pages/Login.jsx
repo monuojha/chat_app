@@ -6,9 +6,9 @@ import { loginUser } from "../features/authSlice";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { FiHelpCircle } from "react-icons/fi";
-import Image1 from "../../public/signup.jpg";
-import Image2 from "../../public/chatSignup.webp";
-import Imag3 from "../../public/signup3.jpg";
+import Image1 from "../assets/images/signup.jpg";
+import Image2 from "../assets/images/chatSignup.webp";
+import Imag3 from "../assets/images/signup3.jpg";
 import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
 const Login = () => {

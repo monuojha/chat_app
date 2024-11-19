@@ -2,9 +2,9 @@ import React from 'react'
 import { useState , useEffect } from 'react'
 import { registerUser } from '../features/authSlice'
 import { useDispatch, useSelector } from 'react-redux'
-import Image1 from "../../public/signup.jpg";
-import Image2 from "../../public/chatSignup.webp";
-import Imag3 from "../../public/signup3.jpg";
+import Image1 from "../assets/images/signup.jpg";
+import Image2 from "../assets/images/chatSignup.webp";
+import Imag3 from "../assets/images/signup3.jpg";
 import { FaUserAlt, FaEnvelope, FaLock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Slider from '../components/Slider';
